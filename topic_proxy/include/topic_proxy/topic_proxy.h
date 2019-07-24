@@ -93,7 +93,7 @@ void TopicProxy::publishMessage(const M& message, const std::string& topic, bool
   request.message.blob.setCompressed(compressed);
   request.message.blob.serialize(message);
 
-  return send(request);
+  send(request);
 }
 
 } // namespace topic_proxy

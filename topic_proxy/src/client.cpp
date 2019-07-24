@@ -147,7 +147,7 @@ public:
 
   bool republish(GetMessage::Request& request, bool latch = false)
   {
-    republish(request, request.topic, latch);
+    return republish(request, request.topic, latch);
   }
 
   bool republish(GetMessage::Request& request, const std::string& topic, bool latch = false)
